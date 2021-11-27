@@ -337,7 +337,7 @@ Gur Telem - 206631848
 Question
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 We can look at the 
 \begin_inset Formula $3$
 \end_inset
@@ -345,7 +345,7 @@ We can look at the
  points
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
 <features tabularvalignment="middle">
@@ -560,7 +560,7 @@ We can look at the
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 Since all 
 \begin_inset Formula $3$
 \end_inset
@@ -576,51 +576,7 @@ Since all
  points.
 \end_layout
 
-\begin_layout Standard
-Since the 
-\begin_inset Formula $3$
-\end_inset
-
- points aren't on the same line they define a single plane.
-\end_layout
-
-\begin_layout Standard
-So we get 
-\begin_inset Formula $3$
-\end_inset
-
- equations
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\begin{cases}
-C+D=0\\
-2A+2C+D=0\\
-6A+2B+3C+D=0
-\end{cases}\Ra\left[\begin{matrix}0 & 0 & 1 & -1\\
-2 & 0 & 2 & -1\\
-6 & 2 & 3 & -1
-\end{matrix}\right]\Ra\left[\begin{matrix}0 & 0 & 1 & -1\\
-2 & 0 & 0 & 1\\
-6 & 2 & 0 & 2
-\end{matrix}\right]\Ra\left[\begin{matrix}0 & 0 & 1 & -1\\
-1 & 0 & 0 & 0.5\\
-0 & 1 & 0 & -0.5
-\end{matrix}\right]\Ra\begin{cases}
-C=-D\\
-A=0.5D\\
-B=-0.5
-\end{cases}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Proof
 We know that the two vectors 
 \begin_inset Formula $\left(2-0,0-0,2-1\right)=\left(2,0,1\right)$
 \end_inset
@@ -633,10 +589,10 @@ We know that the two vectors
 \begin_inset Formula $\left(2,0,1\right)\times\left(6,2,2\right)$
 \end_inset
 
- is the normal to the plane.
+ is a normal to the plane.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 Meaning that 
 \begin_inset Formula $\left|\begin{matrix}i & j & k\\
 2 & 0 & 1\\
@@ -644,24 +600,27 @@ Meaning that
 \end{matrix}\right|=-2\hat{i}-\left(4-6\right)\hat{j}+\left(4-0\right)\hat{k}=-2\hi+2\hj+4\hk$
 \end_inset
 
-.
- So 
-\begin_inset Formula $D=-4$
-\end_inset
-
- (since the normal is 
-\begin_inset Formula $\left(A,B,C\right)=\left(\frac{1}{2}D,-\frac{1}{2}D,-D\right)$
-\end_inset
-
-).
- And thus 
+ is a normal to the plane.
+ Thus 
 \begin_inset Formula $A=-2,B=2,C=4$
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
+Since 
+\begin_inset Formula $\left(0,0,1\right)$
+\end_inset
+
+ is on the plane then 
+\begin_inset Formula $-2\cdot0+2\cdot0+4\cdot1+D=0\Ra D=-4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
 So the plane is 
 \begin_inset Formula $-2x+2y+4z-4=0$
 \end_inset
@@ -673,7 +632,7 @@ So the plane is
  points.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 Let's assign 
 \begin_inset Formula $x\left(t\right),y\left(t\right),z\left(t\right)$
 \end_inset
@@ -689,14 +648,17 @@ Let's assign
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 So we got that the plane's equation is true for all 
 \begin_inset Formula $\left(x\left(t\right),y\left(t\right),z\left(t\right)\right)$
 \end_inset
 
 .
  So the entire curve is on the plane.
- 
+\end_layout
+
+\begin_layout Proof
+Q.E.D.
 \end_layout
 
 \begin_layout Standard
@@ -711,14 +673,105 @@ Question
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+Vector 
+\begin_inset Formula $\vec{v}\neq\vec{0}$
+\end_inset
+
+ in 
+\begin_inset Formula $\R^{3}$
+\end_inset
+
+.
+ And 
+\begin_inset Formula 
+\[
+f\left(x,y,z\right)=\begin{cases}
+\frac{\abs{\left(x,y,z\right)\times\vec{v}}}{\left|\left(x,y,z\right)\right|} & \left(x,y,z\right)\neq\vec{0}\\
+0 & else
+\end{cases}
+\]
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
-Question
+\begin_layout Standard
+We'll note that 
+\begin_inset Formula $\frac{\abs{\left(x,y,z\right)\times\vec{v}}}{\left|\left(x,y,z\right)\right|}=\frac{\left|\left(x,y,z\right)\cdot\left|\vec{v}\right|\cdot\sin\theta\cdot\vec{n}\right|}{\left|\left(x,y,z\right)\right|}=\vec{v}\cdot\sin\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Aleph
+\end_layout
+
+\begin_layout Standard
+So taking a different a different vector (say 
+\begin_inset Formula $\vec{u}$
+\end_inset
+
+) is equal to rotating the function by the angle between 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{u}$
+\end_inset
+
+ and multiplying by 
+\begin_inset Formula $\frac{\left|\vec{u}\right|}{\left|\vec{v}\right|}$
+\end_inset
+
+.
+ In other words, 
+\end_layout
+
+\begin_layout Subsection
+Bet
+\end_layout
+
+\begin_layout Standard
+From previous section, we get that only the angle between 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ affects the value of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ So for each value of value 
+\begin_inset Formula $k$
+\end_inset
+
+ of 
+\begin_inset Formula $f$
+\end_inset
+
+, all the vectors with an angle of 
+\begin_inset Formula $\sin^{-1}\left(\frac{k}{\left|\vec{v}\right|}\right)$
+\end_inset
+
+ get the same value with 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So let's cross products with 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
