@@ -709,24 +709,17 @@ Aleph
 \end_layout
 
 \begin_layout Standard
-So taking a different a different vector (say 
+So taking a different vector (say 
 \begin_inset Formula $\vec{u}$
 \end_inset
 
-) is equal to rotating the function by the angle between 
-\begin_inset Formula $\vec{v}$
-\end_inset
-
- and 
-\begin_inset Formula $\vec{u}$
-\end_inset
-
- and multiplying by 
+) is equal to rotating the function by an angle and multiplying by a constant
+ (
 \begin_inset Formula $\frac{\left|\vec{u}\right|}{\left|\vec{v}\right|}$
 \end_inset
 
-.
- In other words, 
+).
+ In other words, the function is isometric.
 \end_layout
 
 \begin_layout Subsection
@@ -767,8 +760,12 @@ From previous section, we get that only the angle between
 \end_layout
 
 \begin_layout Standard
-So let's cross products with 
-\begin_inset Formula $\vec{v}$
+So let's cross product a vector 
+\begin_inset Formula $\vec{u}=\left(a,b,c\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $\vec{v}=\left(0,0,1\right)$
 \end_inset
 
 .
