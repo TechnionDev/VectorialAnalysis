@@ -284,7 +284,7 @@ theorems-std
 \end_layout
 
 \begin_layout Title
-Vectorial Analysis HW 1
+Vectorial Analysis HW 2
 \end_layout
 
 \begin_layout Standard
@@ -726,7 +726,7 @@ So taking a different vector (say
 Bet
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 From previous section, we get that only the angle between 
 \begin_inset Formula $\left(x,y,z\right)$
 \end_inset
@@ -759,7 +759,7 @@ From previous section, we get that only the angle between
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 So let's cross product a vector 
 \begin_inset Formula $\vec{u}=\left(a,b,c\right)$
 \end_inset
@@ -768,18 +768,183 @@ So let's cross product a vector
 \begin_inset Formula $\vec{v}=\left(0,0,1\right)$
 \end_inset
 
-.
-\end_layout
+:
+\begin_inset Formula 
+\[
+\left(a,b,c\right)\times\left(0,0,1\right)=\left|\begin{matrix}\hi & \hj & \hk\\
+a & b & c\\
+0 & 0 & 1
+\end{matrix}\right|=\left(b-0\right)\hi-\left(a-0\right)\hj+\left(0-0\right)\hk=b\hi-a\hj+0\hk
+\]
 
-\begin_layout Standard
-\begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
-Question
+\begin_layout Proof
+And the magnitude of the cross product is 
+\begin_inset Formula $\sqrt{b^{2}+a^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So 
+\begin_inset Formula 
+\[
+f\left(a,b,c\right)=\frac{\sqrt{b^{2}+a^{2}}}{\left|\left(a,b,c\right)\right|}=\frac{\sqrt{b^{2}+a^{2}}}{\sqrt{a^{2}+b^{2}+c^{2}}}=k\Ra\sqrt{b^{2}+a^{2}}=k\sqrt{a^{2}+b^{2}+c^{2}}=b^{2}+a^{2}=k^{2}\left(a^{2}+b^{2}+c^{2}\right)\Ra
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Ra b^{2}+a^{2}=k^{2}a^{2}+k^{2}b^{2}+k^{2}c^{2}\Ra\left(k^{2}-1\right)a^{2}+\left(k^{2}-1\right)b^{2}+k^{2}c^{2}=0\Ra
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Ra\left(k^{2}-1\right)a^{2}+\left(k^{2}-1\right)b^{2}+k^{2}c^{2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For 
+\begin_inset Formula $k<0$
+\end_inset
+
+ there is no solution because the fraction of two square root will never
+ be negative.
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $k=0$
+\end_inset
+
+ we get 
+\begin_inset Formula $a^{2}+b^{2}=0$
+\end_inset
+
+ but in 
+\begin_inset Formula $\R$
+\end_inset
+
+ this is possible only if 
+\begin_inset Formula $a=b=0$
+\end_inset
+
+.
+ And 
+\begin_inset Formula $c$
+\end_inset
+
+ can be anything.
+ So all the vectors 
+\begin_inset Formula $\left(0,0,c\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $1>k>0$
+\end_inset
+
+ we get 
+\begin_inset Formula $\left(k^{2}-1\right)<0$
+\end_inset
+
+ and thus 
+\begin_inset Formula $-\left(k^{2}-1\right)=\left(1-k^{2}\right)>0$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $\frac{a^{2}}{\frac{k^{2}}{\left(1-k^{2}\right)}}+\frac{b^{2}}{\frac{k^{2}}{\left(1-k^{2}\right)}}=c^{2}$
+\end_inset
+
+ is an elliptical cone (equation of the form 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=z^{2}$
+\end_inset
+
+ with 
+\begin_inset Formula $a=b=\frac{k}{\sqrt{\left(1-k^{2}\right)}}$
+\end_inset
+
+).
+ Note that for each 
+\begin_inset Formula $k$
+\end_inset
+
+ in this range, the level set is a different elliptical cone.
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $k=1$
+\end_inset
+
+ we need 
+\begin_inset Formula $c=0$
+\end_inset
+
+ for the nominator and the denominator to equal.
+ So all 
+\begin_inset Formula $\vec{u}=\left(a,b,0\right)$
+\end_inset
+
+ would solve the equation 
+\begin_inset Formula $f\left(\vec{u}\right)=k=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $k>1$
+\end_inset
+
+ there are no solutions since 
+\begin_inset Formula $\sqrt{b^{2}+a^{2}}\leq\sqrt{a^{2}+b^{2}+c^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+And the answer is yes.
+ There's a level set 
+\begin_inset Formula $\set{\left(a,b,0\right)}{a,b\in\R}$
+\end_inset
+
+ a plane which is perpendicular to the line level set 
+\begin_inset Formula $\set{\left(0,0,c\right)}{c\in\R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+It's easy to see that 
+\begin_inset Formula $\left(a,b,0\right)\cdot\left(0,0,c\right)=a\cdot0+b\cdot0+0\cdot c=0+0+0=0$
+\end_inset
+
+.
 \end_layout
 
 \end_body
