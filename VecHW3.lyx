@@ -1,0 +1,932 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\begin_preamble
+\usepackage{xcolor}
+\pagecolor[rgb]{0.15,0.15,0.15} %black
+\color[rgb]{1,1,1} %grey
+
+\newfontfamily\mylistingsfont{PT Mono}
+\newfontfamily\hebrewfont{Arial}
+\definecolor{lbcolor}{rgb}{0.2,0.2,0.2}  
+\end_preamble
+\use_default_options true
+\begin_removed_modules
+theorems-ams
+\end_removed_modules
+\begin_modules
+eqs-within-sections
+figs-within-sections
+linguistics
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\undeq}[1]{\underset{\text{#1}}{\underbrace{=}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\und}[2]{\underset{\text{#2}}{\underbrace{#1}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\upr}[2]{\overset{#2}{\overbrace{#1}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\C}{\mathbb{C}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\P}{\mathbb{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Ra}{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Lra}{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\La}{\Longleftarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ra}{\rightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\leftarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lra}{\longleftrightarrow}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\set}[2]{\left\{  #1\mid#2\right\}  }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\e}[2]{\left(#1,#2\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left|#1\right|}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\seg}[2]{\left[#1,#2\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\absv}{\left|V\right|}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\absv}{\left|E\right|}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sseq}{\subseteq}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ewfunc}[1]{#1:E\ra\R}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ewfuncp}[1]{#1:E\ra\R^{+}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ewfuncnn}[1]{#1:E\ra\R_{\geq0}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\vwfunc}[1]{#1:V\ra\R}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\d}{\partial}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\h}[1]{\hat{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hi}{\hat{i}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hj}{\hat{j}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hk}{\hat{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Vectorial Analysis HW 3
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="2cm">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size huge
+Eliran Turgeman - 206895427
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1cm">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size huge
+Gur Telem - 206631848
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Question
+\end_layout
+
+\begin_layout Section
+Question
+\end_layout
+
+\begin_layout Standard
+Calculate the volume of:
+\begin_inset Formula 
+\[
+V=\left\{ \left(x,y,z\right)\mid2-z\leq x+y\leq5-z,\,1-y\leq x\leq3-y,\,x\leq y\leq2x\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+From 
+\begin_inset Formula $2-z\leq x+y\leq5-z\Ra2\leq x+y+z\leq5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+From 
+\begin_inset Formula $1-y\leq x\leq3-y\Ra1\leq x+y\leq3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+BWoC 
+\begin_inset Formula $x<\frac{1}{3}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $y<\frac{2}{3}$
+\end_inset
+
+.
+ And thus 
+\begin_inset Formula $x+y<1$
+\end_inset
+
+.
+ In contradiction to 
+\begin_inset Formula $1\leq x+y$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $x,y\geq\frac{1}{3}>0$
+\end_inset
+
+.
+ So from 
+\begin_inset Formula $\frac{1}{3}\leq x\leq y\leq2x\Ra1\leq\frac{y}{x}\leq2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+To conclude 
+\begin_inset Formula 
+\[
+V=\set{\left(x,y,z\right)}{2\leq x+y+z\leq5,\,1\leq\frac{y}{x}\leq2,\,1\leq x+y\leq3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let's mark 
+\begin_inset Formula $u=x+y+z,\,v=\frac{y}{x},\,w=x+y$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+J=\frac{1}{J^{-1}}=\frac{1}{\frac{\partial\left(u,v,w\right)}{\partial\left(x,y,z\right)}}=\frac{1}{\left|\begin{matrix}u'_{x} & u'_{y} & u'_{z}\\
+v'_{x} & v'_{y} & v'_{z}\\
+w'_{x} & w'_{y} & w'_{z}
+\end{matrix}\right|}=\frac{1}{\left|\begin{matrix}1 & 1 & 1\\
+-\frac{y}{x^{2}} & \frac{1}{x} & 0\\
+1 & 1 & 0
+\end{matrix}\right|}=\frac{1}{-\frac{y}{x^{2}}-\frac{1}{x}}=\frac{1}{-\frac{y+x}{x^{2}}}=-\frac{x^{2}}{y+x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Note that we expanded according to the last column rather than first row.
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $x^{2}\geq\frac{1}{9}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $y>x>0\Ra x+y>0$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left|J\right|=\left|-\frac{x^{2}}{y+x}\right|=\frac{x^{2}}{y+x}=\frac{}{w}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So 
+\begin_inset Formula $V=\set{\left(u,v,w\right)}{2\leq u\leq5,\,1\leq v\leq2,\,1\leq w\leq3}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\iiint_{V}1d\left(x,y,z\right)=\iiint_{V}\left|J\right|d\left(u,v,w\right)=\iiint_{V}\frac{x^{2}}{y+x}d\left(u,v,w\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+But we need to express 
+\begin_inset Formula $\frac{x^{2}}{y+x}$
+\end_inset
+
+ with 
+\begin_inset Formula $u,v,w$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $x+y=x\left(1+\frac{y}{x}\right)\Ra\frac{x+y}{\left(1+\frac{y}{x}\right)}=\frac{w}{1+v}=x$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\[
+\iiint_{V}\frac{x^{2}}{y+x}d\left(u,v,w\right)=\iiint_{V}\frac{\left(\frac{w}{1+v}\right)^{2}}{w}d\left(u,v,w\right)=\iiint_{V}\frac{w}{\left(1+v\right)^{2}}d\left(u,v,w\right)=\int_{2}^{5}\int_{1}^{2}\int_{1}^{3}\frac{w}{\left(1+v\right)^{2}}dwdvdu=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{2}^{5}\int_{1}^{2}\frac{\upr{3^{2}-1^{2}}{\cancel{8}4}}{\cancel{2}\left(1+v\right)^{2}}dvdu=\int_{2}^{5}4\int_{1}^{2}\frac{1}{\left(1+v\right)^{2}}dvdu=\int_{2}^{5}-4\frac{1}{1+v}\mid_{v=1}^{2}du=\int_{2}^{5}4\cdot\left(\und{\frac{1}{2}-\frac{1}{3}}{1/6}\right)du=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{2}^{5}\frac{2}{3}du=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question
+\end_layout
+
+\begin_layout Standard
+Find the center mass of the quarter single-sided-cone with a uniform density
+ of 
+\begin_inset Formula $\rho\equiv1$
+\end_inset
+
+ trapped between 
+\begin_inset Formula 
+\[
+z=0,\,z=1,\,y=0,\,x=0\,x^{2}+y^{2}=z^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since we're working with a cone, it's more convenient to work with radial
+ tube coordinates.
+\end_layout
+
+\begin_layout Proof
+So 
+\begin_inset Formula $x=r\cos\theta$
+\end_inset
+
+, 
+\begin_inset Formula $y=r\sin\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So 
+\begin_inset Formula $J=\frac{\d\left(x,y,z\right)}{\d\left(r,\theta,z\right)}=\left|\begin{matrix}\cos\theta & -r\sin\theta & 0\\
+\sin\theta & r\cos\theta & 0\\
+0 & 0 & 1
+\end{matrix}\right|=r\left(\cos^{2}\theta+\sin^{2}\theta\right)=r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So for 
+\begin_inset Formula $x$
+\end_inset
+
+ coordinate: 
+\begin_inset Formula 
+\[
+\iiint_{V}x\cdot\und{\left|J\right|}{\text{r}}\cdot1dv=\int_{0}^{1}\int_{0}^{\pi/2}\int_{0}^{z}r^{2}\cos\theta\,dr\,d\theta\,dz=\frac{1}{3}\int_{0}^{1}\int_{0}^{\pi/2}z^{3}\cos\theta\,d\theta\,dz=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{3}\int_{0}^{1}z^{3}\left(\und{\sin\frac{\pi}{2}-\sin0}1\right)\,dz=\frac{1}{3}\int_{0}^{1}z^{3}\,dz=\frac{1}{12}1^{4}=\frac{1}{12}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+For 
+\begin_inset Formula $y$
+\end_inset
+
+ coordinate:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\iiint_{V}y\cdot\und{\left|J\right|}{\text{r}}\cdot1dv=\int_{0}^{1}\int_{0}^{\pi/2}\int_{0}^{z}r^{2}\sin\theta\,dr\,d\theta\,dz=\int_{0}^{\pi/2}\sin\theta\,d\theta\cdot\int_{0}^{1}\int_{0}^{z}r^{2}dr\,dz=-\left(0-1\right)\frac{1}{3}\cdot\int_{0}^{1}z^{3}dz=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\left(0-1\right)\frac{1}{12}\cdot1^{4}=\frac{1}{12}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Note that this isn't surprising, it's what we expected from symmetry considerati
+ons.
+\end_layout
+
+\begin_layout Proof
+For 
+\begin_inset Formula $z$
+\end_inset
+
+ coordinate:
+\begin_inset Formula 
+\[
+\iiint_{V}z\cdot\und{\left|J\right|}{\text{r}}\cdot1dv=\int_{0}^{1}\int_{0}^{\pi/2}\int_{0}^{z}rz\,dr\,d\theta\,dz=\int_{0}^{1}\int_{0}^{\pi/2}\frac{z^{3}}{2}\,d\theta\,dz=\int_{0}^{1}\frac{z^{3}}{2}\frac{\pi}{2}\,dz=\frac{\pi\cdot1^{4}}{16}=\frac{\pi}{16}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+So the center mass is
+\begin_inset Formula 
+\[
+\frac{1}{\text{mass}}\cdot\left(\frac{1}{12},\frac{1}{12},\frac{\pi}{16}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+But the mass of a cone is 
+\begin_inset Formula $\pi r^{2}\frac{h}{3}=\frac{\pi}{3}$
+\end_inset
+
+.
+ So for a quarter of a cone it's 
+\begin_inset Formula $\frac{\pi}{12}$
+\end_inset
+
+ so the centroid is
+\begin_inset Formula 
+\[
+\left(\frac{1}{\pi},\frac{1}{\pi},\frac{3}{4}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question
+\end_layout
+
+\begin_layout Standard
+Calculate the volume of the object trapped between the spheres
+\begin_inset Formula 
+\[
+x^{2}+y^{2}+z^{2}=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}+\left(y+2\right)^{2}+z^{2}=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+From those we get 
+\begin_inset Formula $y=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Meaning the intersection of the shells of the spheres is 
+\begin_inset Formula $y=-1$
+\end_inset
+
+ ; 
+\begin_inset Formula $x^{2}+z^{2}=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So All we need it to calculate half of the intersection area and multiply
+ by 
+\begin_inset Formula $2$
+\end_inset
+
+ (the magic of symmetry).
+\end_layout
+
+\begin_layout Proof
+Let's look at the cut parallel to plane 
+\begin_inset Formula $XZ$
+\end_inset
+
+ (from 
+\begin_inset Formula $-2\leq y\leq-1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+The radius of the circle of the cut at 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ is 
+\begin_inset Formula $\sqrt{4-y_{0}^{2}}$
+\end_inset
+
+ so the area in the cut is 
+\begin_inset Formula $\left(4-y_{0}^{2}\right)\pi$
+\end_inset
+
+.
+ So we can integrate over all the cuts:
+\begin_inset Formula 
+\[
+\int_{-2}^{-1}4\pi-\pi y^{2}dy=4\pi-\frac{\pi}{3}\left(\left(-1\right)^{3}-\left(-2\right)^{3}\right)=4\pi-\frac{\pi}{3}\left(-1+8\right)=\frac{5\pi}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+And now we multiply but 
+\begin_inset Formula $2$
+\end_inset
+
+ and get the entire area trapped
+\begin_inset Formula 
+\[
+10\pi/3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $T:\R^{3}\ra\R^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u\left(x,y,z\right)=x^{2}+y^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v\left(x,y,z\right)=x-y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w\left(x,y,z\right)=z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ given that 
+\begin_inset Formula $T$
+\end_inset
+
+ copies the cube 
+\begin_inset Formula $\left[3,3+\varepsilon\right]\times\left[2,2+\varepsilon\right]\times\left[1,1+\varepsilon\right]$
+\end_inset
+
+ to an object with volume 
+\begin_inset Formula $V\left(\varepsilon\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+RTP: 
+\begin_inset Formula 
+\[
+\lim_{\varepsilon\ra0}\frac{V\left(\varepsilon\right)}{\varepsilon^{3}}=L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+The Jacobean is 
+\begin_inset Formula 
+\[
+J=\frac{1}{\begin{matrix}2x & 2y & 0\\
+1 & -1 & 0\\
+0 & 0 & 1
+\end{matrix}}=\frac{1}{-2x-2y}=-\frac{1}{2\left(x+y\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Thus 
+\begin_inset Formula $\left|J^{-1}\left(3,2,1\right)\right|=\left|-2\left(3+2\right)\right|=\left|-10\right|=10$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So 
+\begin_inset Formula $V\left(\varepsilon\right)=10\cdot\varepsilon^{3}$
+\end_inset
+
+ (because we can take out 
+\begin_inset Formula $\left|J^{-1}\right|$
+\end_inset
+
+ when we do a reverse variable interchange in the integral to calculate
+ the volume in the new space).
+\end_layout
+
+\begin_layout Proof
+And thus 
+\begin_inset Formula $\lim_{\varepsilon\ra0}\frac{V\left(\varepsilon\right)}{\varepsilon^{3}}=\lim_{\varepsilon\ra0}\frac{10\varepsilon^{3}}{\varepsilon^{3}}=\lim_{\varepsilon\ra0}10=10$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
