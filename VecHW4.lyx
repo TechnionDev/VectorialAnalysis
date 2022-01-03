@@ -1,0 +1,665 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\begin_preamble
+\usepackage{xcolor}
+\pagecolor[rgb]{0.15,0.15,0.15} %black
+\color[rgb]{1,1,1} %grey
+
+\newfontfamily\mylistingsfont{PT Mono}
+\newfontfamily\hebrewfont{Arial}
+\definecolor{lbcolor}{rgb}{0.2,0.2,0.2}  
+\end_preamble
+\use_default_options true
+\begin_removed_modules
+theorems-ams
+\end_removed_modules
+\begin_modules
+eqs-within-sections
+figs-within-sections
+linguistics
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\undeq}[1]{\underset{\text{#1}}{\underbrace{=}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\und}[2]{\underset{\text{#2}}{\underbrace{#1}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\upr}[2]{\overset{#2}{\overbrace{#1}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\C}{\mathbb{C}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\P}{\mathbb{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Ra}{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Lra}{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\La}{\Longleftarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ra}{\rightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\leftarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lra}{\longleftrightarrow}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\set}[2]{\left\{  #1\mid#2\right\}  }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\e}[2]{\left(#1,#2\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left|#1\right|}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\seg}[2]{\left[#1,#2\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\absv}{\left|V\right|}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\absv}{\left|E\right|}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sseq}{\subseteq}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ewfunc}[1]{#1:E\ra\R}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ewfuncp}[1]{#1:E\ra\R^{+}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ewfuncnn}[1]{#1:E\ra\R_{\geq0}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\vwfunc}[1]{#1:V\ra\R}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\d}{\partial}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\h}[1]{\hat{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hi}{\hat{i}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hj}{\hat{j}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hk}{\hat{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Vectorial Analysis HW 4
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="2cm">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size huge
+Eliran Turgeman - 206895427
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1cm">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size huge
+Gur Telem - 206631848
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question
+\end_layout
+
+\begin_layout Standard
+Need to calculate 
+\begin_inset Formula $\int_{C}x^{2}ydx-y^{2}xdy$
+\end_inset
+
+ with 
+\begin_inset Formula $C$
+\end_inset
+
+ is the upper half circle 
+\begin_inset Formula $x^{2}+y^{2}=a^{2}$
+\end_inset
+
+ counterclockwise.
+\end_layout
+
+\begin_layout Proof
+Let's look at the parameterization of 
+\begin_inset Formula $r\left(t\right)=\left(a\cos\left(t\right),a\sin\left(t\right),0\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $0\leq t\leq\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So 
+\begin_inset Formula $r'\left(t\right)=\left(-a\sin t,a\cos t,0\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{C}x^{2}ydx-y^{2}xdy=\int_{t=0}^{\pi}\left(a\cos t\right)^{2}\left(a\sin t\right)\und{\left(-a\sin t\right)}{\text{r'\left(t\right)_{x}}}-\left(a\sin t\right)^{2}\left(a\cos t\right)\und{\left(a\cos t\right)}{\text{\ensuremath{r'\left(t\right)_{y}}}}dt=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{t=0}^{\pi}a^{4}\cos^{2}t\sin^{2}t\cdot\left(-1-1\right)dt=-\frac{1}{2}a^{4}\int_{t=0}^{\pi}\left(2\cos t\sin t\right)^{2}dt=-\frac{1}{2}a^{4}\int_{t=0}^{\pi}\left(\sin2t\right)^{2}dt=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\frac{1}{2}a^{4}\int_{t=0}^{\pi}\frac{1}{2}-\cos4t\,dt=-\frac{1}{2}a^{4}\left(\frac{\pi}{2}-\und 0{\text{\ensuremath{\int_{t=0}^{\pi}\cos4t\,dt}}}\right)=-\frac{1}{4}\pi a^{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question
+\end_layout
+
+\begin_layout Standard
+Of all the smooth closed directed counterclockwise curves that are edges
+ of closed areas on the plane.
+ Find curve 
+\begin_inset Formula $C$
+\end_inset
+
+ such that the work is maximal:
+\begin_inset Formula 
+\[
+\oint_{C}\left(3x^{2}y+x\cos x\right)dx+\left(6x-2xy^{2}+\sin y\right)dy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let's look at 
+\begin_inset Formula $P\left(x,y\right)=3x^{2}y+x\cos x$
+\end_inset
+
+ and 
+\begin_inset Formula $Q\left(x,y\right)=6x-2xy^{2}+\sin y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So 
+\begin_inset Formula $P'_{y}=3x^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $Q'_{x}=6-2y^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So 
+\begin_inset Formula $Q'_{x}-P'_{y}=6-2y^{2}-3x^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So according to Green's Theorem
+\begin_inset Formula 
+\[
+\oint_{C}\left(3x^{2}y+x\cos x\right)dx+\left(6x-2xy^{2}+\sin y\right)dy=\iint_{D}6-2y^{2}-3x^{2}dxdy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+We need to find 
+\begin_inset Formula $D$
+\end_inset
+
+ that maxes the above expression.
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $6-2y^{2}-3x^{2}\geq0$
+\end_inset
+
+ when 
+\begin_inset Formula $6\geq2y^{2}+3x^{2}$
+\end_inset
+
+ then only these points will benefit us if included in 
+\begin_inset Formula $D$
+\end_inset
+
+ (other points will contribute negative values, lowering the sum, aka integral,
+ expression).
+ So we can mark 
+\begin_inset Formula $D=\set{\left(x,y\right)}{6\geq2y^{2}+3x^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Note that this is an ellipse with a border 
+\begin_inset Formula $C=\set{\left(x,y\right)}{6=2y^{2}+3x^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+So 
+\begin_inset Formula $C$
+\end_inset
+
+ is the curve that will maximize the integral.
+\end_layout
+
+\begin_layout Proof
+Q.E.D.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\gamma\in\R^{2}$
+\end_inset
+
+ closed smooth curve.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f,g:\R^{2}\ra\R$
+\end_inset
+
+ continues with continues partial derivatives in the plane.
+\end_layout
+
+\begin_layout Standard
+RTP:
+\begin_inset Formula 
+\[
+\oint_{\gamma}f\vec{\nabla}g\cdot\vec{d\gamma}=-\oint_{\gamma}g\vec{\nabla}f\cdot\vec{d\gamma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hint: Show that 
+\begin_inset Formula $\vec{\nabla}\left(fg\right)$
+\end_inset
+
+ a conservative field.
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $f,g$
+\end_inset
+
+ continues with continues partial derivatives in the plane then 
+\begin_inset Formula $fg$
+\end_inset
+
+ is also as such.
+\end_layout
+
+\begin_layout Proof
+Let's mark 
+\begin_inset Formula $F=\vec{\nabla}\left(fg\right)$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $F$
+\end_inset
+
+ (or 
+\begin_inset Formula $\vec{\nabla}\left(fg\right)$
+\end_inset
+
+) is a conservative field since 
+\begin_inset Formula $fg\in C^{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We know that 
+\begin_inset Formula $\vec{\nabla}\left(fg\right)=g\vec{\nabla}f+f\vec{\nabla}g$
+\end_inset
+
+ according to derivative rules.
+\end_layout
+
+\begin_layout Proof
+Thus 
+\begin_inset Formula 
+\[
+\oint_{\gamma}g\vec{\nabla}f\vec{d\gamma}+\oint_{\gamma}f\vec{\nabla}g\vec{d\gamma}=\oint_{\gamma}g\vec{\nabla}f+f\vec{\nabla}g\vec{d\gamma}=\oint_{\gamma}\vec{\nabla}\left(fg\right)\vec{d\gamma}\undeq{\text{\ensuremath{\vec{\nabla}\left(fg\right)} is a conservative field}}0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Thus we get
+\begin_inset Formula 
+\[
+\oint_{\gamma}f\vec{\nabla}g\cdot\vec{d\gamma}=-\oint_{\gamma}g\vec{\nabla}f\cdot\vec{d\gamma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Q.E.D
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question
+\end_layout
+
+\end_body
+\end_document
